@@ -1,0 +1,60 @@
+\documentclass[12pt ]{article}
+\usepackage{graphicx}
+%\documentclass[journal,12pt,twocolumn]{IEEEtran}
+\usepackage[none]{hyphenat}
+\usepackage{graphicx}
+\usepackage{listings}
+\usepackage[english]{babel}
+\usepackage{graphicx}
+\usepackage{caption}
+\usepackage{hyperref}
+\usepackage{booktabs}
+\usepackage{array}
+\usepackage{amsmath}   % for having text in math mode
+\usepackage{listings}
+\lstset{   
+  frame=sin gle,
+  breaklines=true
+}
+%New macro definitions
+\newcommand{\mydet}[1]{\ensuremath{\begin{vmatrix}#1\end{vmatrix}}}
+\providecommand{\brak}[1]{\ensuremath{\left(#1\right)}}
+\providecommand{\norm}[1]{\left\lVert#1\right\rVert}
+\newcommand{\solution}{\noindent \textbf{Solution: }}
+\newcommand{ \myvec}[1]{\ensuremath{\begin{pmatrix}#1\end{pmatrix}}}
+\let\vec\mathbf
+
+\begin{document}
+\begin{center} def logic_function(U, V, W, X):
+    # First MUX
+    $if U == 0 and V == 0:$
+        mux1_out = 1  # Vcc is considered 1
+    $elif U == 0 and V == 1:$
+        mux1_out = 1  # Vcc is considered 1
+    $elif U == 1 and V == 0:$
+        mux1_out = 1  # Vcc is considered 1
+    $ elif U == 1 and V == 1:$
+        mux1_out = 0  # Ground is considered 0
+    
+    # Second MUX
+    $if W == 0 and X == 0:$
+        F = mux1_out
+   $ elif W == 0 and X == 1:$
+        F = mux1_out
+   $ elif W == 1 and X == 0:$
+        F = mux1_out
+   $ elif W == 1 and X == 1:$
+        F = 0  # Ground is considered 0
+    
+    return F
+
+# Test cases
+print(logic_function(0, 0, 0, 0))  # Output: 1
+print(logic_function(0, 1, 0, 1))  # Output: 1
+print(logic_function(1, 0, 1, 0))  # Output: 1
+print(logic_function(1, 1, 1, 1))  # Output: 0
+ 
+\end{emunate}
+\end{emunate}
+
+                   
