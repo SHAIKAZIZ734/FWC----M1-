@@ -1,0 +1,115 @@
+\documentclass[12pt]{article}
+\usepackage{graphicx}
+%\documentclass[journal,12pt,twocolumn]{IEEEtran}
+\usepackage[none]{hyphenat}
+\usepackage{graphicx}
+\usepackage{listings}
+\usepackage[english]{babel}
+\usepackage{graphicx}
+\usepackage{caption}
+\usepackage{hyperref}
+\usepackage{booktabs}
+\usepackage{array}
+\usepackage{amsmath}   % for having text in math mode
+\usepackage{listings}
+\lstset{
+  frame=single,
+  breaklines=true
+}
+%New macro definitions
+\newcommand{\mydet}[1]{\ensuremath{\begin{vmatrix}#1\end{vmatrix}}}
+\providecommand{\brak}[1]{\ensuremath{\left(#1\right)}}
+\providecommand{\norm}[1]{\left\lVert#1\right\rVert}
+\newcommand{\solution}{\noindent \textbf{Solution: }}
+\newcommand{\myvec}[1]{\ensuremath{\begin{pmatrix}#1\end{pmatrix}}}
+\let\vec\mathbf
+
+\begin{document}
+\begin{center}
+\textbf\large{CHAPTER-7 \\ COORDINATE GEOMETRY}
+\end{center}
+
+\section*{EXERCISE - 4.1}
+\begin{enumerate}
+\item In the previous chapter, we have studied about matrices
+and algebra of matrices. We have also learnt that a system
+of algebraic equations can be expressed in the form of
+matrices. This means, a system of linear equations like
+
+\itemdef solve_linear_equation(a, b, c):
+    solutions = []
+    for x in range(-10, 11):  # Iterate through x values from -10 to 10
+        if b != 0:
+            y = (c - a * x) / b
+            if y.is_integer():
+                solutions.append((x, int(y)))
+        elif a * x == c:
+             solutions.append((x, 'any'))
+    return solutions
+
+# Input coefficients
+a = int(input("Enter the coefficient a: "))
+b = int(input("Enter the coefficient b: "))
+c = int(input("Enter the constant c: "))
+
+# Find and print solutions
+solutions = solve_linear_equation(a, b, c)
+if solutions:
+    print("Solutions for {}x + {}y = {}:".format(a, b, c))
+    for x, y in solutions:
+        print("x =", x, ", y =", y)
+else:
+    print("No integer solutions found for {}x + {}y = {} within the range checked.".format(a, b, c))\
+
+\item #!/bin/bash
+
+read -p "Enter the value of a1: " a1
+read -p "Enter the value of b2: " b2
+read -p "Enter the value of c1: " c1
+read -p "Enter the value of x: " x
+
+y=$(echo "scale=2; (c1 - a1 * x) / b2" | bc)
+
+echo "The value of y is: $y"\
+
+\item can be represented asimport numpy as np
+
+# Define the coefficient matrix A
+A = np.array([[a1, b1], [a2, b2]])
+
+# Define the constant vector C
+C = np.array([c1, c2])
+
+# Solve the system of equations
+try:
+    X = np.linalg.solve(A, C)
+    print("Solution:")
+    print("x =", X[0])
+    print("y =", X[1])
+except np.linalg.LinAlgError:
+    print("The system of equations has no unique solution.").now this
+system of equations has a unique solution or not, is determined by the number \documentclass{article}
+\usepackage{amsmath}
+
+\begin{document}
+
+$a_1 \, b_2 \, a \, b \, a \, b \, 1 \, 1 \, 2 \, 2 \neq - a_2 \, b_1$
+
+\end{document}
+\frac{a_1}{a_2} \neq \frac{b_1}{b_2} \text{ or } a_1b_2 - a
+≠ – a2 b1 . (Recall that if or, a1 b2 – a2 b1 ≠ 0, then the system of linear equations has a unique solution). The number
+\documentclass{article}
+\usepackage{amsmath}
+
+\begin{document}
+
+$a_1 b_2 - a_2 b_1
+which determines uniqueness of solution is associated with the matrix A = \begin{bmatrix}
+    a_1 & b_1 \\
+    a_2 & b_2
+\end{bmatrix}
+and is called the determinant of A or det A. Determinants have wide applications in Engineering, Science, Economics, Social Science, etc. In this chapter, we shall study determinants up to order three only with real entries. Also, we will study various properties of determinants, minors, cofactors and applications of determinants in finding the area of a triangle, adjoint and inverse of a square matrix, consistency and inconsistency of system of linear equations and solution of linear equations in two or three variables using inverse of a matrix.
+
+\end{docement}
+
+\end{docement}

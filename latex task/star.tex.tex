@@ -1,0 +1,71 @@
+\documentclass[12pt]{article}
+\usepackage{graphicx}
+\usepackage[none]{hyphenat}
+\usepackage[english]{babel}
+\usepackage{caption}
+\usepackage{hyperref}
+\usepackage{booktabs}
+\usepackage{array}
+\usepackage{amsmath}   % for mathematical symbols
+\usepackage{listings}  % for code listings
+
+% Define custom commands
+\newcommand{\solution}{\noindent \textbf{Solution: }}
+\newcommand{\myvec}[1]{\ensuremath{\begin{bmatrix} #1 \end{bmatrix}}}
+\providecommand{\norm}[1]{\left\lVert#1\right\rVert}
+
+\begin{document}
+
+\begin{center}
+    \Large \textbf{Relations and Functions}
+\end{center}
+
+\section{Introduction}
+Recall that the notion of relations and functions, domain, co-domain, and range have been introduced earlier.
+
+\begin{enumerate}
+    \item ${(a, b) \in A \times B: a \text{ is brother of } b}$
+    \item ${(a, b) \in A \times B: a \text{ is sister of } b}$
+    \item ${(a, b) \in A \times B: \text{age of } a \text{ is greater than age of } b}$
+    \item ${(a, b) \in A \times B: \text{total marks obtained by } a \text{ in the final examination is less than the total marks obtained by } b}$
+    \item ${(a, b) \in A \times B: a \text{ lives in the same locality as } b}$.
+\end{enumerate}
+
+\section{Types of Relations}
+In this chapter, we will study different types of relations and functions, composition of functions, invertible functions, and binary operations.
+
+\begin{enumerate}
+    \item Definition 1: A relation \( R \) in a set \( A \) is called an \textbf{empty relation} if no element of \( A \) is related to any element of \( A \), i.e., \( R = \emptyset \subseteq A \times A \).
+    \item Definition 2: A relation \( R \) in a set \( A \) is called a \textbf{universal relation} if each element of \( A \) is related to every element of \( A \), i.e., \( R = A \times A \).
+\end{enumerate}
+
+Both the empty relation and the universal relation are sometimes called trivial relations.
+
+\subsection{Examples}
+\begin{enumerate}
+    \item \textbf{Example 1:} Let \( A \) be the set of all students of a boys' school. Show that the relation \( R \) in \( A \) given by:
+    \[
+    R = \{(a, b) : a \text{ is sister of } b\}
+    \]
+    is the empty relation, and
+    \[
+    R' = \{(a, b) : \text{the difference between heights of } a \text{ and } b \text{ is less than 3 meters}\}
+    \]
+    is the universal relation.
+    
+    \solution Since the school is a boys' school, no student can be a sister of any other student. Hence, \( R = \emptyset \), showing that \( R \) is the empty relation. 
+    
+    It is also obvious that the difference between the heights of any two students in the school must be less than 3 meters. This shows that \( R' = A \times A \), which is the universal relation.
+\end{enumerate}
+
+\section{Equivalence Relations}
+To study equivalence relations, we first consider three important types of relations:
+
+\begin{enumerate}
+    \item \textbf{Reflexive:} A relation \( R \) in a set \( A \) is reflexive if \( (a, a) \in R \) for every \( a \in A \).
+    \item \textbf{Symmetric:} A relation \( R \) in a set \( A \) is symmetric if \( (a_1, a_2) \in R \) implies that \( (a_2, a_1) \in R \) for all \( a_1, a_2 \in A \).
+    \item \textbf{Transitive:} A relation \( R \) in a set \( A \) is transitive if \( (a_1, a_2) \in R \) and \( (a_2, a_3) \in R \) implies that \( (a_1, a_3) \in R \) for all \( a_1, a_2, a_3 \in A \).
+\end{enumerate}
+
+\end{document}
+
